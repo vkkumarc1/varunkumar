@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Divs</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .outer {
+        width: 700px;
+        height: 750px;
+        margin: 100px auto 100px auto;
+        background-color: #bac;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inner {
+        width: 80%;
+        height: 90%;
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .inner div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 100, 0.5) 5px 10px 3px;
+      }
+      .item1 {
+        background-color: #ff5733;
+      }
+      .item2 {
+        background-color: #33ffa8;
+      }
+      .item3 {
+        background-color: #3360ff;
+      }
+      .item4 {
+        background-color: #ff33b8;
+      }
+      .item5 {
+        background-color: #ffea33;
+      }
+      .item6 {
+        background-color: #8333ff;
+      }
+      .item7 {
+        background-color: #3aa;
+      }
+      .item8 {
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <div class="item1">First</div>
+        <div class="item2">Second</div>
+        <div class="item3">Third</div>
+        <div class="item4">Fourth</div>
+        <div class="item5">Fifth</div>
+        <div class="item6">Sixth</div>
+        <div class="item7">Seventh</div>
+        <div class="item8">eigth</div>
+      </div>
+    </div>
+  </body>
+</html>
